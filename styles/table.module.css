@@ -1,0 +1,26 @@
+.TableContainer {
+    padding: 10px;
+    margin: 5vh auto;
+}
+
+.AddNew {
+    background-color: #0072a3;
+    color: white;
+    min-width: 150px;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 10px;
+}
+
+.EditSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.TableImage {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}

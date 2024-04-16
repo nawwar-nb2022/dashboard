@@ -1,0 +1,92 @@
+.LoginWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.LoginContainer {
+    max-width: 700px;
+    min-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+    min-height: 75svh;
+}
+
+.LoginContainer .ImageContainer {
+    min-width: 50%;
+    min-height: 75vh !important;
+    min-height: 75svh !important;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.LoginContainer .ImageContainer img {
+    object-fit: cover !important;
+    min-height: 100% !important;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    width: 50%;
+}
+.formContainer .logoTitle {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+}
+.formContainer .logoTitle img {
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid black;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.formContainer form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.formContainer form .FormTitle {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.formContainer form fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+
+.formContainer form fieldset input {
+    width: 100%;
+    outline: none;
+    min-height: 30px;
+}
+
+.formContainer .btnContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnContainer button {
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: #0072a3;
+    color: white;
+    border-radius: 30px;
+}

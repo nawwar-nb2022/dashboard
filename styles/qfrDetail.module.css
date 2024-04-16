@@ -1,0 +1,124 @@
+.DataContainer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.DataContainer .row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.SingleContainer {
+    width: 45%;
+    padding: 20px 0;
+}
+
+.SingleContainer .label {
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.SingleContainer .inputStyle {
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 7px 10px;
+    background-color: #fafafa;
+}
+
+.overLayContainer {
+    width: 90%;
+    margin: auto;
+    background-color: inherit;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+.overLayContainer .header {
+    text-align: center;
+}
+
+.overLayContainer .header a {
+    --fill-color: #add8e6;
+    position: relative;
+    padding: 4px 0;
+    text-transform: uppercase;
+
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+    color: black;
+    font-weight: bold;
+}
+.overLayContainer .header a:hover {
+    background-size: 100%;
+}
+.overLayContainer .header a::after {
+    content: '';
+    position: absolute;
+    /* width: 100%; */
+    height: 1px;
+    bottom: -5px;
+    background-color: black;
+    right: 0px;
+    left: 100%;
+    transition: 0.5s ease all;
+}
+
+.overLayContainer .header a:hover::after {
+    right: 0px;
+    left: 0px;
+}
+
+.ProductContainer {
+    min-width: 45%;
+}
+.ProductContainer .ContainerImage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.ProductContainer .label {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.ContainerImage img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.ContainerImage p {
+    font-weight: bold;
+}
+
+.CategoryContainer .ContainerImageCat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.ContainerImageCat img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.ContainerImageCat p {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    .SingleContainer {
+        min-width: 100%;
+        padding: 20px 0;
+    }
+}

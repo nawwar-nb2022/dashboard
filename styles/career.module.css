@@ -1,0 +1,43 @@
+.formContainer {
+    margin: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formContainer form .row {
+    margin-bottom: 20px;
+}
+.formContainer form .row label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.formContainer form .row input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 6px;
+}
+
+.btnContainer button {
+    background-color: #0072a3;
+    padding: 3px 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.TitleImageContainer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TitleImageContainer img {
+    border: 1px solid black;
+    border-radius: 50%;
+}

@@ -1,0 +1,13 @@
+.HeaderSetting {
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+
+    justify-content: space-between;
+}
+.HeaderSetting .header {
+    font-size: 1.5rem;
+}

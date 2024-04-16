@@ -1,0 +1,47 @@
+.GridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 20p;
+}
+
+.CardContainer {
+    background-image: linear-gradient(to right, white, #e1eaee);
+    margin: 40px;
+    padding: 30px 10px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.imageSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSection img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.DetailsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+.DetailsSection a {
+    margin-top: 30px;
+
+    color: #0072a3;
+    border: 1px solid #0072a3;
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 30px;
+}
+@media only screen and (max-width: 900px) {
+    .GridContainer {
+        grid-template-columns: 1fr;
+    }
+}

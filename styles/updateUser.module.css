@@ -1,0 +1,48 @@
+.formContainer {
+    padding: 30px;
+    width: 90%;
+    margin: 5vh auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.GridInputContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.row {
+    width: 100%;
+}
+.row input {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btnContainer button {
+    width: 100px;
+    background-color: rgba(0, 114, 163, 0.7);
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+    transition: 0.5s ease all;
+}
+.btnContainer button:hover {
+    background-color: rgba(0, 114, 163, 1);
+}
+
+@media only screen and (max-width: 700px) {
+    .GridInputContainer {
+        grid-template-columns: 1fr;
+    }
+}
